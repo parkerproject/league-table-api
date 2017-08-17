@@ -6,6 +6,11 @@ module.exports = () => {
     method: 'GET',
     path: '/bankruptcy',
     config: controller.bankruptcy.index,
+  },
+  {
+    method: 'GET',
+    path: '/ocr',
+    config: controller.ocr.index,
   }];
   return routeTable;
 };
