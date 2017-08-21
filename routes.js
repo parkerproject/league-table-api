@@ -9,7 +9,7 @@ module.exports = () => {
   },
   {
     method: 'GET',
-    path: '/ocr',
+    path: '/out_of_court',
     config: controller.ocr.index,
   }];
   return routeTable;
