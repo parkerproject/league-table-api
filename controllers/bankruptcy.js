@@ -6,7 +6,7 @@ module.exports = {
     handler(request, reply) {
       db.bankruptcy.find({}, (err, data) => {
         let tabs = map(data, 'TAB');
-        const results = orderBy(data, ['AMOUNT'], ['asc']);
+        const results = orderBy(data, ['RANK'], ['asc']);
         tabs = uniq(tabs);
         reply({ tabs, results });
       });
