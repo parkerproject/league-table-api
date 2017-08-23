@@ -11,6 +11,11 @@ module.exports = () => {
     method: 'GET',
     path: '/out_of_court',
     config: controller.ocr.index,
+  },
+  {
+    method: 'GET',
+    path: '/ma',
+    config: controller.ma.index,
   }];
   return routeTable;
 };
