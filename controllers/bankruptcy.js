@@ -4,7 +4,7 @@ const db = require('../helpers/db');
 module.exports = {
   index: {
     handler(request, reply) {
-      db.bankruptcy.find({}, (err, data) => {
+      db.bankruptcyleague.find({}, (err, data) => {
         if (err) console.log(err);
         let tabs = map(data, 'TAB');
         const results = orderBy(data, ['RANK'], ['asc']);

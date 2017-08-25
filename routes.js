@@ -16,6 +16,10 @@ module.exports = () => {
     method: 'GET',
     path: '/ma',
     config: controller.ma.index,
+  }, {
+    method: 'GET',
+    path: '/pe',
+    config: controller.pe.index,
   }];
   return routeTable;
 };
